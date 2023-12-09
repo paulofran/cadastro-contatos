@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Contatos</h1>
+        </header>
+        <form id="contatoForm" cellspacing="0">
+            <input type="text" id="nome-contato" placeholder="Nome de Contato" required>
+            <input type="tel" id="telefone-contato" name="telefone" placeholder="Telefone" required>
+            
+            <button type="submit" onclick="adicionarContato()" >Cadastrar</button>
+        </form>
+        <table id="tabelaContatos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
